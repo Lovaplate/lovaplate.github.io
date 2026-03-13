@@ -1,0 +1,38 @@
+[
+    {
+        "id": "d1",
+        "name": "Dragon Spirit",
+        "price": 15,
+        "image": "assets/dragon.png"
+    },
+    {
+        "id": "bg1",
+        "name": "Baby Groot", 
+        "price": 7,
+        "image": "assets/babygroot.jpeg"
+    },
+    {
+        "id": "d1",
+        "name": "Dragon Spirit",          
+        "price": 20,
+        "image": "assets/dragon.png"
+    },
+    {
+        "id": "d1",
+        "name": "Dragon Spirit",          
+        "price": 20,
+        "image": "assets/dragon.png"
+    },
+    {
+        "id": "d1",
+        "name": "Dragon Spirit",          
+        "price": 20,
+        "image": "assets/dragon.png"
+    },
+        {
+        "id": "d1",
+        "name": "Dragon Spirit",          
+        "price": 20,
+        "image": "assets/dragon.png"
+    }
+]

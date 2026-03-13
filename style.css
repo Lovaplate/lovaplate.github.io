@@ -24,7 +24,7 @@ body {
     justify-content: center;
 }
 
-.info-card{
+.info-card {
     display: flex;
     align-items: center;
     gap: 20px;
@@ -35,22 +35,22 @@ body {
     margin: 20px;
 }
 
-.info-card img{
+.info-card img {
     width: 300px;
     border-radius: 10px;
 }
 
-.info-text{
+.info-text {
     display: flex;
     flex-direction: column;
 }
 
-.info-text h2{
+.info-text h2 {
     text-align: left;
     margin-bottom: 10px;
 }
 
-.info-text p{
+.info-text p {
     text-align: left;
     font-family: "Inter";
 }
@@ -58,18 +58,25 @@ body {
 p {
     font-family: "Bungee";
     text-align: center;
-    color:white 
+    color: white
 }
 
 h2 {
     font-family: "Bungee";
     text-align: center;
     font-size: 1cm;
-    color:white 
+    color: white
+}
+
+h3 {
+    font-family: "Bungee";
+    text-align: center;
+    font-size: 1cm;
+    color: rgb(30, 0, 255)
 }
 
 button {
-    display:flex;
+    display: flex;
     justify-content: center;
     font-family: "Bungee";
     color: rgb(30, 0, 255);
@@ -82,38 +89,170 @@ button {
     box-shadow: 0px 0px 0px rgb(0, 4, 255);
 }
 
+.buy {
+    width: 100%;
+}
+
+#remove {
+    display: block;
+    justify-content:baseline;
+    font-family: "Bungee";
+    color: rgb(30, 0, 255);
+    text-align: center;
+    background-color: rgb(36, 248, 192);
+    border-radius: 0.15cm;
+    border: none;
+    padding: 10px 32px;
+    cursor: pointer;
+    box-shadow: 0px 0px 0px rgb(0, 4, 255);
+}
+
+#close-cart {
+    width: 100%;
+}
+
 button:hover {
     box-shadow: 0px 0px 10px rgb(0, 4, 255);
 }
 
 .topnav {
-  background-color: #333;
-  overflow: hidden;
+    background-color: #333;
+    overflow: hidden;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  font-family: "Bungee";
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    font-family: "Bungee";
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
-  color: black;
+    background-color: #ddd;
+    color: black;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: rgb(36, 248, 192);
-  color: white;
+    background-color: rgb(36, 248, 192);
+    color: white;
 }
 
 .topnav a.active:hover {
-  background-color: rgb(22, 155, 120);
+    background-color: rgb(22, 155, 120);
+}
+
+.cart {
+    cursor: pointer;
+    font-size: 1.2rem;
+    position: absolute;
+    margin-left: 90%;
+}
+
+#cart-count {
+    background: #ff4081;
+    color: #fff;
+    font-size: 0.8rem;
+    font-family: "Bungee";
+    padding: 2px 6px;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+}
+
+.cart-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(6px);
+    background: rgba(0, 0, 0, 0.3);
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease;
+}
+
+.cart-content {
+    background: #fff;
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 350px;
+    max-height: 80%;
+    overflow-y: auto;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    animation: slideUp 0.4s ease;
+}
+
+.cart-content h2 {
+    color: rgb(30, 0, 255);
+    margin-bottom: 1rem;
+}
+
+#cart-items {
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+#cart-items li {
+    font-family: "Bungee";
+    margin-bottom: 0.5rem;
+}
+
+.total {
+    color: rgb(30, 0, 255);
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.product {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+}
+
+.product img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.product-details {
+    padding: 1rem;
+}
+
+.product-details h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.product-details p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.8rem;
+}
+
+.price {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
 }

@@ -17,11 +17,27 @@
     <div id="home" class="header">
         <img src="logo.png" alt="logo" width=90px height=90px>
         <h1 class="title">LovaPlate</h1>
+        <div class="cart" id="cart-btn">
+        🛒 <span id="cart-count">0</span>
+        </div>
     </div>  
 
-    <h2>LA BOUTIQUE ARRIVE BIENTÔT!</h2>
+    <main>
+        <section id="products" class="products"></section>
+    </main>
 
-    
+    <div class="cart-modal" id="cart-modal">
+        <div class="cart-content">
+        <h2>Panier</h2>
+        <ul id="cart-items"></ul>
+        <p class="total">Total: €<span id="cart-total">0.00</span></p>
+        <button id="close-cart">Fermer</button>
+        </div>
+    </div>
+
+  <script src="shop.js"></script>
+
+
 </div>
         
 </body>
